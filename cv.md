@@ -5,3 +5,4 @@
 * linkedin: https://www.linkedin.com/in/juliasmva00/
 * phone: +375255152453
 * tg: @@aatashj
+#### english level : *B1*

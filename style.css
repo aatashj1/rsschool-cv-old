@@ -1,9 +1,13 @@
-body @font-face {
+body
+
+@font-face {
  font-family: Raleway;
  src: url("/assets/fonts/Raleway/Raleway-VariableFont_wght.ttf")
 }
+
 body {
- background-color: floralwhite;
+ background-color: rgba(236, 221, 198, 1);
+ margin: 30px 100px;
 }
 
 ul {
@@ -11,6 +15,90 @@ ul {
 }
 
 
-.mail, .telegram, .linkedin, .inst{
- width: 70px;
+
+#header-nav {
+ display: flex;
+ flex-direction: row;
+ justify-content: flex-end;
 }
+
+.header-list {
+ position: relative;
+ text-decoration: none;
+ color: black;
+ padding: 10px;
+ font-size: 200%;
+ margin-right: 20px;
+}
+
+#photo {
+ grid-area: photo;
+ justify-self: center;
+ border-radius: 200px;
+ transform: scale(-1, 1);
+ border-color: rgba(85, 78, 107, 1);
+ border-style: solid;
+ border-width: medium;
+}
+
+
+#name {
+ grid-area: name;
+ font-size: 400%;
+ color: rgba(85, 78, 107, 1);
+}
+
+#position {
+ grid-area: posit;
+ font-size: 400%;
+ color: rgba(85, 78, 107, 1);
+}
+
+.main-info {
+ display: grid;
+ margin-top: 100px;
+ grid-template-areas: "name photo"
+                      "posit photo";
+}
+
+#cont {
+ grid-area: contact;
+ font-size: 260%;
+ justify-self: center;
+
+}
+#foll {
+ grid-area: follow;
+ font-size: 260%;
+ justify-self: center;
+
+}
+
+#link {
+ grid-area: link;
+
+}
+
+#tg {
+ grid-area: tg;
+
+}
+
+#mail {
+ grid-area: mail;
+
+}
+
+#inst {
+ grid-area: inst;
+
+}
+
+.connection, .contacts-info, .follow-info {
+ display: grid;
+ margin-top: 70px;
+
+ grid-template-areas: "contact contact contact follow "
+                      "link tg mail inst";
+}
+

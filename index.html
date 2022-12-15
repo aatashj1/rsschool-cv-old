@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
    <meta charset="UTF-8">
-   <meta name="viewport"
-         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+   <meta name="viewport" content="initial-scale=1.0, width=device-width">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <title>My CV (Julia)</title>
    <link rel="stylesheet" href="style.css">
@@ -19,109 +18,154 @@
             <a class="header-list" href="#experience">Experience</a>
             <a class="header-list" href="#education">Education</a>
             <a class="header-list" href="#languages">Languages</a>
-            <a class="header-list" href="#footer">Useful information</a>
+            <a class="header-list" href="#footer-text">Useful information</a>
          </nav>
       </div>
    </header>
    <main>
-      <div class="main-info">
+      <img src="assets/icons/planet.svg" class="background-img" alt="background-flower">
+      <div class="main-info container">
          <img src="assets/photo.jpg" alt="my-photo" width="340" height="340" class="main-item" id="photo">
          <h2 class="main-item" id="name">Julia Smirnova</h2>
          <h1 class="main-item" id="position">Junior Front-End Developer</h1>
       </div>
       <div class="connection">
          <h3 class="contacts-into" id="cont">Contact me here</h3>
-         <ul class="contacts-info">
-            <li class="contacts-items" id="link">
-               <a href="https://www.linkedin.com/in/juliasmva00/" target="_blank">
-                  <img src="assets/icons/linkedin.svg" class="linkedin" alt="linkedin">
-               </a>
-            </li>
-            <li class="contacts-item" id="tg">
-               <a href="https://t.me/aatashj" target="_blank">
-                  <img src="assets/icons/telegram.svg" class="telegram" alt="telegram">
-               </a>
-            </li>
-            <li class="contacts-item" id="mail">
-               <a href="mailto:frnkxoxo69@gmail.com" target="_blank">
-                  <img src="assets/icons/mail.svg" class="mail" alt="mail">
-               </a>
-            </li>
-         </ul>
+
+         <div class="contacts-item" id="link">
+            <a href="https://www.linkedin.com/in/juliasmva00/" target="_blank">
+               <img src="assets/icons/linkedin.svg" class="linkedin" alt="linkedin">
+            </a>
+         </div>
+         <div class="contacts-item" id="tg">
+            <a href="https://t.me/aatashj" target="_blank">
+               <img src="assets/icons/telegram.svg" class="telegram" alt="telegram">
+            </a>
+         </div>
+         <div class="another-contact-item" id="mail">
+            <button id="btn"><img src="assets/icons/mail.svg" class="mail" alt="mail"></button>
+
+
+         </div>
+
          <h3 class="follows" id="foll">Follow me here :)</h3>
-         <ul class="follow-info">
-            <li class="follow-item" id="inst">
-               <a href="https://www.instagram.com/nepodryga_/">
-                  <img src="assets/icons/inst.svg" class="inst" alt="inst">
-               </a>
-            </li>
-         </ul>
+
+         <div class="contacts-item" id="inst">
+            <a href="https://www.instagram.com/nepodryga_/" target="_blank">
+               <img src="assets/icons/inst.svg" class="inst" alt="inst">
+            </a>
+         </div>
+
       </div>
-      <div id="descriprion">
-         <p>
-            Hi! My name is July. I live in Minsk. I started to study coding in September 2022 and I knew straight away
-            that my direction will be the Frontend.</p>
-         <p>
-            I am looking forward to working in teams as well as individually. I am not only willing to deepen my
-            knowledge
-            but I also want to apply them to the real products.</p>
-         <p> I like to work and see the results of my work.</p>
-         <p>I believe, that my ability to learn and to gain new skills will lead me through this path of becoming a
-            proficient Frontend Developer.</p>
-      </div>
-      <div id="skills">
-         <h3 class="skills">Hard skills</h3>
-         <ul class="skills-list">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Git</li>
-         </ul>
-         <h3 class="skills">Soft skills</h3>
-         <ul class="skills-list">
-            <li>Teamwork</li>
-            <li>Patience</li>
-            <li>Open-mindedness</li>
-            <li>Accountability</li>
-            <li>Time management</li>
-         </ul>
-      </div>
-      <div id="experience">
-         <h2>Work Experience</h2>
-         <h5>Personal Asisstant in Crypto</h5>
-         <p>July 2020 - Now</p>
-         <h5>Email Specialist in Crypto Marketing</h5>
-         <p>September 2022 - Now</p>
-      </div>
-      <div id="education">
-         <h2>Education</h2>
-         <h5>Rolling Scopes School - JS/FE Pre-School </h5>
-         <p>In progress</p>
-         <h5>HTML Academy trainer</h5>
-         <p>In progress</p>
-         <h5>Belarusian State Pedagogical University</h5>
-         <p>2017-2021</p>
-      </div>
-      <div id="languages">
-         <h2>Languages</h2>
-         <h5>English</h5>
-         <p>B2</p>
-         <h5>Russian</h5>
-         <p>Native</p>
-         <h5>French</h5>
-         <p>Not now, but maybe someday...</p>
+      <div class="container">
+         <div id="descriprion">
+            <ul id="description-list">
+               <li class="description-item">
+                  Hi! My name is July. I live in Minsk. I started to study coding in September 2022 and I knew straight
+                  away that my direction will be the Frontend.
+               </li>
+               <li class="description-item">
+                  I am looking forward to working in teams as well as individually. I am not only willing to deepen my
+                  knowledge but I also want to apply them to the real products.
+               </li>
+               <li class="description-item">I like to work and see the results of my work.</li>
+               <li class="description-item">I believe, that my ability to learn and to gain new skills will lead me
+                  through this path of becoming
+                  a
+                  proficient Frontend Developer.
+               </li>
+            </ul>
+         </div>
+         <div id="skills">
+            <h3 class="skills">Hard skills</h3>
+            <ul class="skills-list hard">
+               <li class="skills-item">HTML</li>
+               <li class="skills-item">CSS</li>
+               <li class="skills-item">JavaScript</li>
+               <li class="skills-item">Git</li>
+            </ul>
+            <h3 class="skills">Soft skills</h3>
+            <ul class="skills-list soft">
+               <li class="skills-item">Teamwork</li>
+               <li class="skills-item">Patience</li>
+               <li class="skills-item">Open-mindedness</li>
+               <li class="skills-item">Accountability</li>
+               <li class="skills-item">Time management</li>
+            </ul>
+         </div>
+         <div class="code">
+            <p class="code-example"><b>My code</b></p>
+            <div><code>
+               const random = (min, max) => { <br>
+               const rand = min + Math.random() * (max - min + 1); <br>
+               return Math.floor(rand); <br>
+               }; <br>
+               <br>
+               const btn = document.querySelector('#btn');<br>
+               btn.addEventListener('mouseenter', () => {<br>
+               btn.style.left = `${random(0, 90)}%`;<br>
+               btn.style.top = `${random(0, 90)}%`;<br>
+               });<br>
+            </code></div>
+         </div>
+         <div id="experience">
+            <table class="table-experience">
+               <caption>
+                  <b>Work Experience</b>
+               </caption>
+               <tr class="work">
+                  <th scope="row" class="work asisstan">Personal Asisstant in Crypto</th>
+                  <td class="work asisstan date">April 2020 - Now</td>
+               </tr>
+               <tr class="work">
+                  <th scope="row" class="work">Email Specialist in Crypto Marketing</th>
+                  <td class="work date">September 2022 - Now</td>
+               </tr>
+            </table>
+         </div>
+         <div id="education">
+            <table>
+
+               <caption><b>Education</b></caption>
+
+               <tr>
+                  <th class="education" scope="row">Rolling Scopes School - JS/FE Pre-School</th>
+                  <td class="time">In progress</td>
+               </tr>
+               <tr>
+                  <th class="education" scope="row">HTML Academy trainer</th>
+                  <td class="time">In progress</td>
+               </tr>
+               <tr>
+                  <th class="education" scope="row">Belarusian State Pedagogical University</th>
+                  <td class="time">2017-2021</td>
+               </tr>
+            </table>
+         </div>
+         <div id="languages">
+            <span id="lang"><b>Languages</b></span>
+            <span id="eng">English</span>
+            <span class="lvl" id="lvl-eng">B2</span>
+            <span id="rus">Russian</span>
+            <span class="lvl" id="lvl-rus">Native</span>
+            <span id="frn">French?</span>
+            <span class="lvl" id="lvl-frn">Not now, but maybe someday...</span>
+         </div>
       </div>
    </main>
-   <footer id="footer">
-      <p>© 2022 by Julia Smirnova</p>
-      <p>For thinking - My initials are JS </p>
+   <footer class="footer">
+      <p id="footer-powered">© 2022 by Julia Smirnova</p>
+      <p id="footer-text">For thinking - My initials are JS </p>
       <a href="https://github.com/aatashj1" target="_blank">
-         <img src="assets/icons/git.svg" alt="git">
+         <img src="assets/icons/git.svg" alt="git" id="git">
       </a>
       <a href="https://rs.school/js-stage0/" target="_blank">
-         <img src="assets/icons/logo_rs_text.svg" alt="logo_rs">
+         <img src="assets/icons/logo_rs_text.svg" alt="logo_rs" class="rs-footer">
       </a>
    </footer>
 </div>
+
+<script src="script.js"></script>
+
 </body>
 </html>
